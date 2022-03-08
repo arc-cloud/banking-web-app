@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+body {
+    background: #f4f4f4;
+}
+.max-height {
+    height: 100vh;
+    width: 80px;
+    transition: width 0.35s ease-in;
+    background: #1b1c1e;
+    overflow: hidden;
+    text-align: center;
+}
+
+.max-height:hover, .max-height:focus {
+    width: 200px;
+}
+
+.max-height .logo {
+    margin: 50px;
+}
+
+.max-height .links a {
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 50px;
+    border-radius: 12px;
+    margin-top: 20px;
+    padding: 0 5px;
+    transition: all 0.35s ease-in;
+}
+.max-height .links a:hover, .max-height .links a:focus, .max-height .links a:active {
+    background: #323335;
+}
+.max-height .links a i {
+    font-size: 30px;
+    color: #cdcdcd;
+    padding: 10px 30px;
+}
+.max-height .links a .link-name {
+    color: #999a9c;
+    margin: auto;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 0px;
+    margin-left: -10px;
+}
+.max-height .links a.logout {
+    margin-top: 15rem;
+}

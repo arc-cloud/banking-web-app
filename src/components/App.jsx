@@ -1,21 +1,10 @@
-import { Component } from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./Navbar";
+import Welcome from "./Welcome"
 
-export default class App extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            user: null
-        }
-    }
-    render() {
-        return (
-            <Router>
-                <Routes>
-                    <Route exact path='/' element={ <Navbar /> }  />
-                </Routes>
-            </Router>
-        )
-    }
+const App = () => {
+    return (
+        <>
+            <Welcome />
+        </>
+    )
 }
+export default App;

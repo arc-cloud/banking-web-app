@@ -1,27 +1,26 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-* {
-    margin: 0;
-}
-html, body {
-    height: 100%;
-    font-family: 'Sen', sans-serif;
-}
 body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-}
-img, picture, video, canvas, svg {
-    display: block;
+    font-family: 'Ubuntu', sans-serif;
     max-width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
-input, button, textarea, select {
-    font: inherit;
-}
-p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-}
-#root, #__next {
-    isolation: isolate;
+.custom_wrapper {
+    position: absolute;
+    border-radius: 30px;
+    max-width: 85%;
+    height: 95vh;
+    background: #f6f7fb;
+    margin-top: 20px;
+    margin-left: 190px;
+    
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 20px; 
+    grid-template-areas: 
+    ". . ."
+    ". . ."
+    ". . ."; 
 }

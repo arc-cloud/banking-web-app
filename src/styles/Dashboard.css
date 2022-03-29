@@ -1,0 +1,36 @@
+.welcome_text {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 100px;
+    margin-top: 50px;
+    text-align: start;
+    margin-left: 55px;
+    
+}
+.welcome_text .welcome {
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+.welcome_text .username {
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0;
+}
+
+.misc {
+    border: 1px solid red;
+    width: 600px;
+    grid-column-end: 4;
+}
+.main_content {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border: 1px solid black;
+    margin: 30px;
+    width: 600px;
+}

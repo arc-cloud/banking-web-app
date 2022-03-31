@@ -20,6 +20,7 @@
     text-align: center;
 }
 .nav .content .links .link {
+    text-decoration: none;
     border-radius: 12px;
     cursor: pointer;
     display: flex;
@@ -46,4 +47,9 @@
 
 .nav .empty {
     position: fixed;
+}
+
+/* Custom link */
+.custom_link {
+    text-decoration: none;
 }

@@ -6,21 +6,4 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
 }
-.custom_wrapper {
-    position: absolute;
-    border-radius: 30px;
-    max-width: 85%;
-    height: 95vh;
-    background: #f6f7fb;
-    margin-top: 20px;
-    margin-left: 190px;
-    
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    gap: 20px; 
-    grid-template-areas: 
-    ". . ."
-    ". . ."
-    ". . ."; 
-}
+

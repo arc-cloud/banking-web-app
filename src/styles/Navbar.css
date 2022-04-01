@@ -21,13 +21,14 @@
 }
 .nav .content .links .link {
     text-decoration: none;
-    border-radius: 12px;
+    border-radius: 9px;
     cursor: pointer;
     display: flex;
     flex-direction: row;
     margin: 10px;
     color: #541d97;
     font-weight: 500;
+    transition: all 0.3s ease;
 }
 .nav .content .links .link i {
     font-size: 24px;
@@ -42,7 +43,8 @@
 .nav .content .links .link:hover,
 .nav .content .links .link:active,
 .nav .content .links .link:focus {
-    background-color: #d9cbe9;
+    background-color: #b17af5;
+    
 }
 
 .nav .empty {
@@ -50,6 +52,18 @@
 }
 
 /* Custom link */
-.custom_link {
+a {
     text-decoration: none;
+}
+.current > * {
+    background-color: #c8a4f5;
+    width: 100%;
+    padding-right: 5px;
+}
+
+/* logout */
+.logout {
+    position: absolute;
+    top: 600px;
+    display: none;
 }

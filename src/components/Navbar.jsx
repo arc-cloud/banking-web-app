@@ -1,5 +1,6 @@
 import '../styles/Navbar.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+
 
 const Navbar = () => {
     return (
@@ -10,38 +11,54 @@ const Navbar = () => {
                     <div className="links">
 
                         {/* Dashboard */}
-                        <Link to='/dashboard' className='custom_link'>
-                        <div className="link">
-                            <i className='bx bxs-dashboard'></i>
-                            <p>Dashboard</p>
-                        </div>
-                        </Link>
+                        <NavLink to='/dashboard' className={(navData) => (navData.isActive ? "current" : 'custom_link')}>
+                            <div className="link">
+                                <i className='bx bxs-dashboard'></i>
+                                <p>Dashboard</p>
+                            </div>
+                        </NavLink>
 
                         {/* Profile */}
-                        <div className="link">
-                            <i className='bx bx-user'></i>
-                            <p>Profile</p>
-                        </div>
+                        <NavLink to='/profile' className={(navData) => (navData.isActive ? "current" : 'custom_link')}>
+                            <div className="link">
+                                <i className='bx bx-user'></i>
+                                <p>Profile</p>
+                            </div>
+                        </NavLink>
+
+                        {/* Paypal */}
+                        <NavLink to='/paypal' className={(navData) => (navData.isActive ? "current" : 'custom_link')}>
+                            <div className="link">
+                                <i className='bx bxl-paypal'></i>
+                                <p>Paypal</p>
+                            </div>
+                        </NavLink>
 
                         {/* Statement */}
-                        <div className="link">
-                            <i className='bx bx-file-blank'></i>
-                            <p>Statement</p>
-                        </div>
+                        <NavLink to='/statement' className={(navData) => (navData.isActive ? "current" : 'custom_link')}>
+                            <div className="link">
+                                <i className='bx bx-file-blank'></i>
+                                <p>Statement</p>
+                            </div>
+                        </NavLink>
 
                         {/* Settings */}
-                        <div className="link">
-                            <i className='bx bx-cog'></i>
-                            <p>Settings</p>
-                        </div>
+                        <NavLink to='/settings' className={(navData) => (navData.isActive ? "current" : 'custom_link')}>
+                            <div className="link">
+                                <i className='bx bx-cog'></i>
+                                <p>Settings</p>
+                            </div>
+                        </NavLink>
 
 
 
                         {/* Logout */}
-                        <div className="link">
-                            <i className='bx bx-exit'></i>
-                            <p>Logout</p>
-                        </div>
+                        <NavLink to='/logout' className={(navData) => (navData.isActive ? "current" : 'custom_link')}>
+                            <div className="link logout">
+                                <i className='bx bx-exit'></i>
+                                <p>Logout</p>
+                            </div>
+                        </NavLink>
                     </div>
                 </div>
                 <div className="empty"></div>

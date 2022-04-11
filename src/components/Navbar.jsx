@@ -7,7 +7,7 @@ const Navbar = () => {
         <>
             <div className="nav">
                 <div className="content">
-                    <div className="title">Test Bank</div>
+                    <div className="title">SELRAHC</div>
                     <div className="links">
 
                         {/* Dashboard */}

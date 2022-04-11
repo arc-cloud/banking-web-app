@@ -10,10 +10,11 @@ const Welcome = () => {
   React.useEffect(() => {
     const options = {
     	strings: [
-        'Welcome, Charles'
+        'Welcome to Selrahc Bank. \nThe most trusted financial institution ^2000 in Africa!'
+
       ],
       typeSpeed: 50,
-      backSpeed: 50,
+      backSpeed: 50
     };
     
     // elRef refers to the <span> rendered below

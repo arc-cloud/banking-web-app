@@ -7,3 +7,18 @@ body {
     flex-wrap: nowrap;
 }
 
+/* Main wrapper for all the sections */
+.dash_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    width: 82%;
+    height: 95vh;
+    margin-top: 10px;
+    margin-left: 210px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    
+}

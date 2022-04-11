@@ -1,3 +1,8 @@
+:root {
+    --theme-primary: #541d97;
+    --text-icon-color: #541d97;
+}
+
 .nav {
     position: absolute;
     max-width: 100%;
@@ -13,37 +18,43 @@
     height: 100vh;
 }
 .nav .content .title {
-    cursor: pointer;
+    font-size: 20px;
     font-weight: 700;
-    color: #541d97;
+    margin-top: 20px;
+    color: var(--text-icon-color);
     padding: 20px;
     text-align: center;
+    pointer-events: none;
+    cursor: none;
 }
 .nav .content .links .link {
+    width: 100%;
+    padding-right: 5px;
     text-decoration: none;
     border-radius: 9px;
     cursor: pointer;
     display: flex;
     flex-direction: row;
     margin: 10px;
-    color: #541d97;
+    color: var(--theme-primary-dark);
     font-weight: 500;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 .nav .content .links .link i {
     font-size: 24px;
-    color: #541d97;
+    color: var(--text-icon-color);
     margin: 10px;
 }
 .nav .content .links .link p {
     font-size: 16px;
-    color: #541d97;
+    color: var(--theme-primary);
     margin: 10px;
 }
 .nav .content .links .link:hover,
 .nav .content .links .link:active,
 .nav .content .links .link:focus {
-    background-color: #b17af5;
+    background-color: #a3a3a3;
+    
     
 }
 
@@ -56,7 +67,7 @@ a {
     text-decoration: none;
 }
 .current > * {
-    background-color: #c8a4f5;
+    background-color: #a3a3a3;
     width: 100%;
     padding-right: 5px;
 }

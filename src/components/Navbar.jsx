@@ -7,7 +7,10 @@ const Navbar = () => {
         <>
             <div className="nav">
                 <div className="content">
-                    <div className="title">SELRAHC</div>
+                    <div className="logo">
+                        <span>.io</span>
+                        <p>Banking</p>
+                    </div>
                     <div className="links">
 
                         {/* Dashboard */}

@@ -1,34 +1,52 @@
 :root {
-    --theme-primary: #541d97;
-    --text-icon-color: #541d97;
+    --theme-primary: rgb(19, 23, 255);
+    --text-icon-color: #0a0c80;
+    --text-color: #ffff;
 }
 
 .nav {
     position: absolute;
     max-width: 100%;
     height: 100vh;
-    background-color: #ffffff;
+    background-color: rgb(41, 34, 34);
     display: flex;
     text-align: flex-start;
     
 }
+
 .nav .content {
+    color: var(--text-color);
     font-family: 'Inter', sans-serif;
     max-width: 200px;
     height: 100vh;
 }
-.nav .content .title {
-    font-size: 20px;
-    font-weight: 700;
-    margin-top: 20px;
-    color: var(--text-icon-color);
-    padding: 20px;
-    text-align: center;
-    pointer-events: none;
-    cursor: none;
+.nav .content .logo {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 20px;
+    border-bottom: 2px solid var(--text-color);
 }
+.nav .content .logo span {
+    color: crimson;
+    font-size: 30px;
+    font-family: 'Leckerli One', cursive;  
+    margin: 20px;
+    margin-inline: 2px; 
+}
+
+.nav .content .logo p {
+    font-size: 30px;
+    font-family: 'Caveat', cursive;
+    margin: 20px;
+    margin-inline: 10px; 
+
+}
+
+
+
 .nav .content .links .link {
-    width: 100%;
+    color: var(--text-color);
+    width: 90%;
     padding-right: 5px;
     text-decoration: none;
     border-radius: 9px;
@@ -36,24 +54,25 @@
     display: flex;
     flex-direction: row;
     margin: 10px;
-    color: var(--theme-primary-dark);
     font-weight: 500;
     transition: all 0.5s ease;
 }
 .nav .content .links .link i {
-    font-size: 24px;
-    color: var(--text-icon-color);
+    color: var(--text-color);
+    font-size: 28px;
     margin: 10px;
+    margin-inline-end: 5px;
 }
 .nav .content .links .link p {
     font-size: 16px;
-    color: var(--theme-primary);
     margin: 10px;
+    padding-top: 2px;
+    padding-right: 24px;
 }
 .nav .content .links .link:hover,
 .nav .content .links .link:active,
 .nav .content .links .link:focus {
-    background-color: #a3a3a3;
+    background-color: #727171;
     
     
 }
@@ -67,7 +86,7 @@ a {
     text-decoration: none;
 }
 .current > * {
-    background-color: #a3a3a3;
+    background-color: #727171;
     width: 100%;
     padding-right: 5px;
 }

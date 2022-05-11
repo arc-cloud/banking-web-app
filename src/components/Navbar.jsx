@@ -1,16 +1,39 @@
 import '../styles/Navbar.css';
 import { NavLink } from 'react-router-dom';
 
+/* Custom function to minimize the navbar */
+const minimize_nav = () => {
+    const nav = document.getElementById('nav');
+    const ham = document.getElementById('ham-icon');
+
+    if (nav.classList.contains('minimize')) {
+        nav.classList.remove('minimize');
+        ham.classList.remove('bx-x');
+        ham.classList.add('bx-menu');
+
+    }   else {
+        nav.classList.add('minimize');
+        ham.classList.remove('bx-menu');
+        ham.classList.add('bx-x');
+    }
+}
+
 
 const Navbar = () => {
     return (
         <>
-            <div className="nav">
+            <div className="nav" id='nav'>
                 <div className="content">
                     <div className="logo">
                         <span>.io</span>
                         <p>Banking</p>
                     </div>
+
+                    {/* Hamburger menu icon */}
+                    <div className="ham" onClick={minimize_nav}>
+                        <i className="bx bx-menu" id='ham-icon'></i>
+                    </div>
+
                     <div className="links">
 
                         {/* Dashboard */}
@@ -64,7 +87,6 @@ const Navbar = () => {
                         </NavLink>
                     </div>
                 </div>
-                <div className="empty"></div>
             </div>
         </>
     )

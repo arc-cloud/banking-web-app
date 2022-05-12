@@ -93,7 +93,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <div className="empty" id='empty'>
+            <div className="empty" id='empty' onClick={minimize_nav}>
 
             </div>
         </>

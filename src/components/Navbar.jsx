@@ -6,16 +6,19 @@ import { NavLink } from 'react-router-dom';
 const minimize_nav = () => {
     const nav = document.getElementById('nav');
     const ham = document.getElementById('ham-icon');
+    const empty = document.getElementById('empty');
 
     if (nav.classList.contains('minimize')) {
         nav.classList.remove('minimize');
         ham.classList.remove('bx-menu');
         ham.classList.add('bx-x');
+        empty.classList.add('visible');
 
     }   else {
         nav.classList.add('minimize');
         ham.classList.remove('bx-x');
         ham.classList.add('bx-menu');
+        empty.classList.remove('visible');
     }
 }
 
@@ -89,6 +92,9 @@ const Navbar = () => {
                         </NavLink>
                     </div>
                 </div>
+            </div>
+            <div className="empty" id='empty'>
+
             </div>
         </>
     )

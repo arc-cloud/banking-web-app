@@ -117,5 +117,20 @@ a {
 /* logout */
 .logout {
     position: absolute;
-    top: 90%;
+    top: 85%;
+}
+
+.empty {
+    position: fixed;
+    width: 0;
+    height: 100vh;
+    background-color: rgb(41, 34, 34);
+    opacity: 0.5;
+}
+.empty.visible {
+    width: 100%;
+    display: block;
+    margin-left: 180px;
+    transition: margin-left 0.6s ease;
+
 }

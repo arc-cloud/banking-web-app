@@ -3,7 +3,7 @@ const Settings = () => {
         <>
             <div className="component_wrapper">
                 <div className="component_name">
-                    <h1>Settings</h1>
+                    <p>Settings</p>
                 </div>
             </div>
         </>

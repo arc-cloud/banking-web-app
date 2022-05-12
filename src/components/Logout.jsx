@@ -3,7 +3,7 @@ const Logout = () => {
         <>
             <div className="component_wrapper">
                 <div className="component_name">
-                    <h1>Log Out</h1>
+                    <p>Log Out</p>
                 </div>
             </div>
         </>

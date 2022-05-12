@@ -3,7 +3,7 @@ const Statement = () => {
         <>
         <div className="component_wrapper">
             <div className="component_name">
-                    <h1>Statement</h1>
+                    <p>Statement</p>
                 </div>
         </div>
         </>

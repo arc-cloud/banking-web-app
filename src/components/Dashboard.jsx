@@ -7,7 +7,7 @@ const Dashboard = () => {
         <>
             <div className="component_wrapper">
                 <div className="component_name">
-                    <h1>Dashboard</h1>
+                    <p>Dashboard</p>
                 </div>
             </div>
         </>

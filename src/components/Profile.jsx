@@ -3,7 +3,7 @@ const Profile = () => {
         <>
             <div className="component_wrapper">
                 <div className="component_name">
-                    <h1>Profile</h1>
+                    <p>Profile</p>
                 </div>
             </div>
         </>

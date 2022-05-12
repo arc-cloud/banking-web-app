@@ -3,7 +3,7 @@ const Paypal = () => {
         <>
             <div className="component_wrapper">
                 <div className="component_name">
-                    <h1>PayPal</h1>
+                    <p>PayPal</p>
                 </div>
             </div>
         </>

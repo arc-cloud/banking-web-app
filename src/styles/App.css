@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    overflow-y: hidden;
 }
 
 /* Main wrapper for all the sections */
@@ -13,11 +14,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: relative;
+    position: absolute;
     height: 95vh;
     max-width: 100%;
-
     background-color: #f5f5f5;
     border-radius: 15px;
-    
+    z-index: -1;
 }

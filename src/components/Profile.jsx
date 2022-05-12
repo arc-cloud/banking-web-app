@@ -1,9 +1,10 @@
 const Profile = () => {
     return (
         <>
-            <div className="dash_wrapper">
-                <h1>This is the profile section!</h1>
-                <h2>Under construction!</h2>
+            <div className="component_wrapper">
+                <div className="component_name">
+                    <h1>Profile</h1>
+                </div>
             </div>
         </>
     )

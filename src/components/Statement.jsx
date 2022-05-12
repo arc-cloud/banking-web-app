@@ -1,9 +1,10 @@
 const Statement = () => {
     return (
         <>
-        <div className="dash_wrapper">
-            <h1>This is the statement section</h1>
-            <h2>Under construction!</h2>
+        <div className="component_wrapper">
+            <div className="component_name">
+                    <h1>Statement</h1>
+                </div>
         </div>
         </>
     )

@@ -5,9 +5,10 @@ import '../styles/Dashboard.css';
 const Dashboard = () => {
     return (
         <>
-            <div className="dash_wrapper">
-                <h1>This is the Dashboard section</h1>
-                <h2>Under construction!</h2>
+            <div className="component_wrapper">
+                <div className="component_name">
+                    <h1>Dashboard</h1>
+                </div>
             </div>
         </>
     )

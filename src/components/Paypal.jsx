@@ -1,9 +1,10 @@
 const Paypal = () => {
     return (
         <>
-            <div className="dash_wrapper">
-                <h1>This is the PayPal Section</h1>
-                <h2>Under construction!</h2>
+            <div className="component_wrapper">
+                <div className="component_name">
+                    <h1>PayPal</h1>
+                </div>
             </div>
         </>
     )

@@ -1,9 +1,10 @@
 const Settings = () => {
     return (
         <>
-            <div className="dash_wrapper">
-                <h1>This is the settings section</h1>
-                <h2>Under construction!</h2>
+            <div className="component_wrapper">
+                <div className="component_name">
+                    <h1>Settings</h1>
+                </div>
             </div>
         </>
     )

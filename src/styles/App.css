@@ -5,7 +5,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    overflow-y: hidden;
 }
 
 /* Main wrapper for all the sections */

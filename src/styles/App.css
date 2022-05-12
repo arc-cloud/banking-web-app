@@ -21,7 +21,6 @@
 }
 
 .component_name {
-    position: fixed;
     display: flex;
     height: 40px;
     background: transparent;
@@ -52,4 +51,11 @@
         width: 150px;
     }
     
+}
+
+
+/* Custom scrollbar */
+
+::-webkit-scrollbar, ::-webkit-scrollbar-button, ::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece, ::-webkit-scrollbar-thumb {
+    display: none;
 }

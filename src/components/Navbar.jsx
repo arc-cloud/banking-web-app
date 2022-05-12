@@ -36,6 +36,10 @@ const Navbar = () => {
                     <p>Banking</p>
                 </div>
 
+                <div className="profile-pic">
+                    <i className="bx bx-user"></i>
+                </div>
+
             </div>
             <div className="nav minimize" id='nav'>
                 <div className="content">

@@ -1,4 +1,5 @@
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import Welcome from './Welcome';
 import Navbar from './Navbar';
 import Dashboard from './Dashboard';
 import Profile from './Profile';
@@ -11,7 +12,7 @@ import '../styles/App.css';
 const App = () => {
     return (
         <>
-            
+            {/* <Welcome /> */}
             <Router>
                 <Navbar />
                 <Routes>

@@ -1,0 +1,99 @@
+.note {
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    position: fixed;
+    width: 140px;
+    background: rgb(185, 174, 9);
+    border-radius: 9px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+.welcome .title {
+    display: flex;
+    font-size: 38px;
+    margin-top: 50px;
+
+}
+.welcome .title span {
+    font-family: 'Leckerli One', cursive;
+    color: crimson;
+    margin-inline: 15px;
+}
+.welcome .title p {
+    font-size: 35px;
+    font-family: 'Dosis', sans-serif;
+    padding-top: 2px;
+}
+.desc {
+    font-family: 'Caveat', cursive;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: -30px;
+    margin-left: 18px;
+}
+
+.welcome .login {
+    width: 350px;
+    height: 500px;
+    border:  1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 12px;
+}
+.welcome .login p {
+    font-family: 'Dosis', sans-serif;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.welcome .login .option label {
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 10px;
+    transition: all 0.5s ease;
+}
+.welcome .login .option label.active {
+    opacity: 0.5;
+    margin-top: -24px;
+    margin-left: 0px;
+    transition: all 0.5s ease;
+}
+.welcome .login .option input {
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.welcome .login .option input:focus, .welcome .login .option input:active {
+    outline: none;
+}
+
+
+
+.welcome button {
+    font-size: 18px;
+    font-weight: 600;
+    width: 120px;
+    height: 40px;
+    border-radius: 6px;
+    background: crimson;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.welcome button:hover {
+    border: 1px solid crimson;
+    background: white;
+    color: crimson;
+
+}

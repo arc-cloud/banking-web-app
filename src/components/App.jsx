@@ -12,8 +12,8 @@ import '../styles/App.css';
 const App = () => {
     return (
         <>
-            {/* <Welcome /> */}
-            <Router>
+            <Welcome />
+            {/* <Router>
                 <Navbar />
                 <Routes>
                     <Route exact path='/' element={<Dashboard />} />
@@ -24,7 +24,7 @@ const App = () => {
                     <Route path='/settings' element={ <Settings /> } />
                     <Route path='/logout' element={ <Logout /> } />
                 </Routes>
-            </Router>
+            </Router> */}
         </>
     );
 }

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import '../styles/Welcome.css';
 
 
@@ -17,22 +18,34 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
   })
-})
 
-const log_in = () => {
-  if (inputs[0].value === 'admin' && inputs[1].value === '12345') {
-    console.log('logged in')
-  } else {
-    alert('Wrong username or password!');
+})
+const show_pass = () => {
+  const show = document.getElementById('show_password');
+  const input_field = document.getElementById('password');
+
+  if (show.classList.contains('bx-show')) {
+    show.classList.remove('bx-show');
+    show.classList.add('bx-hide')
+    input_field.type = 'text';
+  }
+  else {
+    show.classList.remove('bx-hide');
+    show.classList.add('bx-show');
+    input_field.type = 'password';
   }
 }
 
+
+
 const Welcome = () => {
+  const [email, set_email] = useState("");
+  const [password, set_password] = useState("");
   return (
     <>
-    <div className="note">
+    <div className="note" draggable>
       <p>
-        Username: <span>admin</span>
+        Email: <span>abc@gmail.com</span>
         <br />
         Password: <span>12345</span>
       </p>
@@ -48,15 +61,16 @@ const Welcome = () => {
         <div className="login">
           <p>Login</p>
           <div className="option">
-            <label htmlFor="username" className=''>Username</label>
-            <input type="text" id='username' required />
+            <label htmlFor="email" className=''>Email</label>
+            <input type="email" id='email' required value={email} onChange={ev => set_email(ev.target.value)} />
           </div>
 
           <div className="option">
             <label htmlFor="password">Password</label>
-            <input type="password" id='password' required />
+            <input type="password" id='password' required value={password} onChange={ev => set_password(ev.target.value)} />
+            <i class='bx bx-show' id='show_password' onClick={show_pass}></i>
           </div>
-          <button type='submit' onClick={log_in}>Log in</button>
+          <button type='submit'>Log in</button>
 
         </div>
       </div>

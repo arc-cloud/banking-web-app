@@ -7,16 +7,17 @@ import Paypal from './Paypal';
 import Statement from './Statement';
 import Settings from './Settings';
 import Logout from './Logout';
+import Loader from './Loader';
 import '../styles/App.css';
 
 const App = () => {
     return (
         <>
-            <Welcome />
-            {/* <Router>
+        <Loader />
+            <Router>
                 <Navbar />
                 <Routes>
-                    <Route exact path='/' element={<Dashboard />} />
+                    <Route path='/' element={ <Dashboard /> } />
                     <Route path='/dashboard' element={ <Dashboard /> } />
                     <Route path='/profile' element={ <Profile /> } />
                     <Route path='/paypal' element={ <Paypal /> } />
@@ -24,7 +25,8 @@ const App = () => {
                     <Route path='/settings' element={ <Settings /> } />
                     <Route path='/logout' element={ <Logout /> } />
                 </Routes>
-            </Router> */}
+            </Router>
+            
         </>
     );
 }

@@ -1,9 +1,9 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Welcome.css';
 
 
 let inputs
-
 document.addEventListener('DOMContentLoaded', () => {
   inputs = document.querySelectorAll('input');
   const labels = document.querySelectorAll('label');
@@ -18,12 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
   })
-
+  
 })
+
+/* Show password */
 const show_pass = () => {
   const show = document.getElementById('show_password');
   const input_field = document.getElementById('password');
-
+  
   if (show.classList.contains('bx-show')) {
     show.classList.remove('bx-show');
     show.classList.add('bx-hide')
@@ -36,11 +38,28 @@ const show_pass = () => {
   }
 }
 
-
+/* Validate form */
+const validate_form = (email, password) => {
+  return email.length > 0 && password.length > 0;
+}
 
 const Welcome = () => {
+/* Log in */
+const log_in = () => {
+  if (email == 'abc123@gmail.com') {
+    set_log_state(true)
+  } else {
+    set_log_state(false)
+  }
+}
+
   const [email, set_email] = useState("");
   const [password, set_password] = useState("");
+  const [log_state, set_log_state] = useState(false);
+
+  if (!log_state) {
+
+
   return (
     <>
     <div className="note" draggable>
@@ -68,15 +87,22 @@ const Welcome = () => {
           <div className="option">
             <label htmlFor="password">Password</label>
             <input type="password" id='password' required value={password} onChange={ev => set_password(ev.target.value)} />
-            <i class='bx bx-show' id='show_password' onClick={show_pass}></i>
+            <i className='bx bx-show' id='show_password' onClick={show_pass}></i>
           </div>
-          <button type='submit'>Log in</button>
-
+          
+          <button type='submit' disabled={!validate_form(email, password)} onClick={log_in}>Log in</button>
+          
         </div>
       </div>
     </>
+  )}
+  else {
+    console.log('Logged in')
+    return (
+      <Link to='/dashboard'></Link>
+    )
+  }
 
-  )
 }
 
 export default Welcome;

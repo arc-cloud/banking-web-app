@@ -1,3 +1,5 @@
+import '../styles/Loader.css';
+
 document.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
@@ -31,11 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    let particle = new Particle(width / 2, height / 2, 3, 'crimson')
+    let particle = new Particle(width / 2, height / 2, 3, 'red')
     
     const animate = () => {
         requestAnimationFrame(animate);
-        ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.09)';
         ctx.fillRect(0, 0, width, height);
         
         particle.draw();

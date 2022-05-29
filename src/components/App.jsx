@@ -12,6 +12,7 @@ import '../styles/App.css';
 
 const App = () => {
     return (
+      
         <>
         <Loader />
             <Router>
@@ -26,8 +27,8 @@ const App = () => {
                     <Route path='/logout' element={ <Logout /> } />
                 </Routes>
             </Router>
-            
         </>
+
     );
 }
 export default App;

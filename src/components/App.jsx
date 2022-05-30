@@ -18,7 +18,6 @@ const App = () => {
       
         <>
         
-        <Loader />
             <Router>
                 <Navbar />
                 <Routes>

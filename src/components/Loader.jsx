@@ -1,6 +1,7 @@
 import '../styles/Loader.css';
 
 document.addEventListener('DOMContentLoaded', () => {
+    const loader = document.getElementById('loader');
     const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
     const width = canvas.width = window.innerWidth;
@@ -44,12 +45,17 @@ document.addEventListener('DOMContentLoaded', () => {
         particle.oscillate();
     }
     animate();
+
+    /* Hide the loader after a few seconds */
+    setTimeout(() => {
+        loader.classList.add('hidden');
+    }, 3000);
 })
 
 
 const Loader = () => {
     return (
-        <div className="loader">
+        <div className="loader" id='loader'>
             <canvas id='canvas'></canvas>
         </div>
     )

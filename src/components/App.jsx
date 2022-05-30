@@ -10,15 +10,19 @@ import Logout from './Logout';
 import Loader from './Loader';
 import '../styles/App.css';
 
+
+ 
+
 const App = () => {
     return (
       
         <>
+        
         <Loader />
             <Router>
                 <Navbar />
                 <Routes>
-                    <Route path='/' element={ <Dashboard /> } />
+                    <Route path='/' element={ <Welcome /> } />
                     <Route path='/dashboard' element={ <Dashboard /> } />
                     <Route path='/profile' element={ <Profile /> } />
                     <Route path='/paypal' element={ <Paypal /> } />

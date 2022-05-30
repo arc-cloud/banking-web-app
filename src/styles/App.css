@@ -41,15 +41,18 @@
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
     animation-delay: 3100ms;
+    opacity: 0;
 
 }
 
 @keyframes border_anim {
     0% {
         width: 0;
+        opacity: 0;
     }
     100% {
         width: 150px;
+        opacity: 1;
     }
     
 }

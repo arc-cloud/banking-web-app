@@ -74,9 +74,8 @@
 }
 .minimize {
     width: 0;
-    max-width: 60px;
     overflow: hidden;
-    transition: 0.1s ease;
+    transition: all 0.6s ease;
 
 }
 
@@ -117,8 +116,7 @@
 .nav .content .links .link:hover,
 .nav .content .links .link:active,
 .nav .content .links .link:focus {
-    background-color: crimson;
-    
+    background-color: rgb(172, 27, 56);
     
 }
 /* Custom link */
@@ -126,7 +124,7 @@ a {
     text-decoration: none;
 }
 .current > * {
-    background-color: crimson;
+    background-color: #dc143c;
     width: 100%;
     padding-right: 5px;
 }

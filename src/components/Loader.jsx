@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         oscillate() {
-            this.x = this.x2 + Math.cos(this.radians) * 20;
-            this.y = this.y2 + Math.sin(this.radians) * 20;
+            this.x = this.x2 - Math.cos(this.radians) * 20;
+            this.y = this.y2 - Math.sin(this.radians) * 20;
             this.radians += this.vel
         }
     }
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const animate = () => {
         requestAnimationFrame(animate);
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.09)';
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.08)';
         ctx.fillRect(0, 0, width, height);
         
         particle.draw();
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /* Hide the loader after a few seconds */
     setTimeout(() => {
         loader.classList.add('hidden');
-    }, 3000);
+    }, 2500);
 })
 
 

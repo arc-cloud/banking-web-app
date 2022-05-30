@@ -1,4 +1,3 @@
-import Welcome from './Welcome';
 import Loader from './Loader';
 import '../styles/Dashboard.css';
 
